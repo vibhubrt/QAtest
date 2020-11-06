@@ -19,7 +19,7 @@ import resources.Utils;
 
 import static io.restassured.RestAssured.*;
 
-public class StepDefination1 extends Utils {
+public class StepDefination extends Utils {
 
 	
 	RequestSpecification request;
@@ -28,34 +28,36 @@ public class StepDefination1 extends Utils {
 	Response resp;
 	JsonPath js;
 
+	// calls requestSpecification method to set base URI and query parameters as latitude and longitude 
 	@Given("valid latitude {double} and longitude {double}")
 	public void valid_latitude_and_longitude(Double latitude, Double longitude) {
 
-		if(latitude == null || longitude ==null){
-			throw new IllegalArgumentException("Argument was null!"); 
-		}
+		
 		request = given().log().all().spec(requestSpecification(latitude, longitude));
 
 	}
-
+	// calls requestSpecification method to set base URI and query parameters latitude,longitude,date,format  
 	@Given("valid latitude {double} and longitude {double} and validdate {string} and format {int}")
 	public void valid_latitude_and_longitude_and_validdate_and_format(Double latitude, Double longitude, String date,
 			int format) {
 		request = given().log().all().spec(requestSpecification(latitude, longitude, date, format));
 	}
-	
+	// calls requestSpecification method to set base URI and query parameters latitude,longitude,format  
 	@Given("valid latitude {double} and longitude {double} and format {int}")
 	public void valid_latitude_and_longitude_and_dateformat(Double latitude, Double longitude, int format) {
 
 		request = given().log().all().spec(requestSpecification(latitude, longitude, format));
 
 	}
-
+ 
+	// calls requestSpecification method to set base URI and query parameters latitude,longitude,date 
 	@Given("valid latitude {double} and longitude {double} and invaliddate {string}")
 	public void valid_latitude_and_longitude_and_invaliddate(Double latitude, Double longitude, String date) {
 		request = given().log().all().spec(requestSpecification(latitude, longitude, date));
 
 	}
+	
+	// Response body  which is returned from API is stored in POJO class based on response code
 	@When("user calls API with get Http request")
 	public void user_calls_api_with_get_http_request() {
 
@@ -72,13 +74,14 @@ public class StepDefination1 extends Utils {
 		
 	}
 
+	//Verifying API response code with expected value
 	@Then("API call code is {string}")
 	public void api_call_success_code_is(String code) {
 
 		assertEquals(Integer.toString(resp.getStatusCode()), code);
 		
 	}
-
+    //Verifying Status of API with expected value
 	@Then("{string} in response body is {string}")
 	public void in_response_body_is(String key, String expectedvalue) {
 
@@ -90,7 +93,7 @@ public class StepDefination1 extends Utils {
 	}
 
 	
-
+    //Verifies whether sunrise and sunset time are returned for specified location
 	@Then("verify sunrise and sunset times")
 	public void verify_sunrise_and_sunset_times() {
 
@@ -98,7 +101,7 @@ public class StepDefination1 extends Utils {
 		assertNotNull(responsebody.getResults().getSunset());
 
 	}
-
+    //To check date returned from response is equal to today's date
 	@Then("check default date is today")
 	public void check_default_date_is_today() throws ParseException {
 
@@ -109,7 +112,7 @@ public class StepDefination1 extends Utils {
 		assertEquals(gettodayUTCDate(), date);
 
 	}
-
+    //Checks if response body contains date     
 	@Then("verify if data is unformatted")
 	public void verify_if_data_is_unformatted() throws ParseException {
 		
@@ -118,7 +121,7 @@ public class StepDefination1 extends Utils {
 		assertTrue(responsebody.getResults().getSunrise().contains(date));
 
 	}
-
+    //Sunrise date and sunset date are extracted from response body and compared with inputdate
 	@Then("check sunrise and sunset of {string}")
 	public void check_sunrise_and_sunset_of(String inputdate) throws ParseException {
 
@@ -129,7 +132,7 @@ public class StepDefination1 extends Utils {
 	}
 
 	
-
+    //checks if calculated day length is equal to day length received from response body/payload 
 	@Then("check time between sunrise and sunset is equal to daylength")
 	public void check_time_between_sunrise_and_sunset_is_equal_to_daylength() {
 		String daylength = getDaylength(responsebody.getResults().getSunrise(), responsebody.getResults().getSunset());

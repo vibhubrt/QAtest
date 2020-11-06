@@ -11,27 +11,28 @@ import io.restassured.specification.RequestSpecification;
 public class Utils {
 	RequestSpecification req;
 	
+	//Sets Baseuri and Queryparameters based on parameters 
 	public RequestSpecification requestSpecification(Double latitude, Double longitude){
 		
 		
 		req = new RequestSpecBuilder().setBaseUri("https://api.sunrise-sunset.org").addQueryParam("lat", latitude).addQueryParam("lng", longitude).build();
 		return req;
 	}
-	
+	//Sets Baseuri and Queryparameters based on parameters 
     public RequestSpecification requestSpecification(Double latitude, Double longitude,int format){
 		
 		
 		req = new RequestSpecBuilder().setBaseUri("https://api.sunrise-sunset.org").addQueryParam("lat", latitude).addQueryParam("lng", longitude).addQueryParam("formatted",format).build();
 		return req;
 	}
-	
+  //Sets Baseuri and Queryparameters based on parameters 
 public RequestSpecification requestSpecification(Double latitude, Double longitude,String date){
 		
 		
 		req = new RequestSpecBuilder().setBaseUri("https://api.sunrise-sunset.org").addQueryParam("lat", latitude).addQueryParam("lng", longitude).addQueryParam("date",date).build();
 		return req;
 	}
-
+//Sets Baseuri and Queryparameters based on parameters 
 public RequestSpecification requestSpecification(Double latitude, Double longitude,String date,int format ){
 	
 	
@@ -41,7 +42,7 @@ public RequestSpecification requestSpecification(Double latitude, Double longitu
 
 
 
-
+//Method gets sunrise and sunset as input and returns daylength which is computed
 public String getDaylength(String sunrise, String sunset){
 	
 	StringBuilder sb = new StringBuilder();
@@ -84,7 +85,7 @@ public String getDaylength(String sunrise, String sunset){
 }
 
 
-
+//Method returns today's date
 public String gettodayUTCDate(){
 	
 	
@@ -95,7 +96,7 @@ public String gettodayUTCDate(){
 	return today;
 }
 
-
+//Method returns date after formatting Payload
 public String getDatefromResponse(String responseDate) throws ParseException{
 	SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
