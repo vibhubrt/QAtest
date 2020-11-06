@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-06T01:38:01.594Z",
+        "start_timestamp": "2020-11-06T03:16:40.421Z",
         "line": 14,
-        "name": "Verify successful response from API",
+        "name": "Verify successful response from API including sunrise and sunset times",
         "description": "",
-        "id": "validating-sunset-and-sunrise-times-api;verify-successful-response-from-api;;2",
+        "id": "validating-sunset-and-sunrise-times-api;verify-successful-response-from-api-including-sunrise-and-sunset-times;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 930000000,
+              "duration": 1104000000,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 2342000000,
+              "duration": 2108000000,
               "status": "passed"
             },
             "line": 6,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 7,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 1287000000,
+              "duration": 1056000000,
               "status": "passed"
             },
             "line": 8,
@@ -99,7 +99,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:06.289Z",
+        "start_timestamp": "2020-11-06T03:16:44.882Z",
         "line": 27,
         "name": "Verify default date in response is today",
         "description": "",
@@ -109,7 +109,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 18,
@@ -135,7 +135,7 @@
           },
           {
             "result": {
-              "duration": 334000000,
+              "duration": 329000000,
               "status": "passed"
             },
             "line": 19,
@@ -164,7 +164,7 @@
           },
           {
             "result": {
-              "duration": 26000000,
+              "duration": 13000000,
               "status": "passed"
             },
             "line": 21,
@@ -199,7 +199,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:06.664Z",
+        "start_timestamp": "2020-11-06T03:16:45.237Z",
         "line": 40,
         "name": "Verify unformatted response when requested",
         "description": "",
@@ -209,7 +209,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 31,
@@ -235,7 +235,7 @@
           },
           {
             "result": {
-              "duration": 351000000,
+              "duration": 375000000,
               "status": "passed"
             },
             "line": 32,
@@ -264,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 21000000,
               "status": "passed"
             },
             "line": 34,
@@ -298,7 +298,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:07.043Z",
+        "start_timestamp": "2020-11-06T03:16:45.652Z",
         "line": 53,
         "name": "Verify invalid response when provided invalid date",
         "description": "",
@@ -308,7 +308,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 45,
@@ -334,7 +334,7 @@
           },
           {
             "result": {
-              "duration": 378000000,
+              "duration": 358000000,
               "status": "passed"
             },
             "line": 46,
@@ -363,7 +363,7 @@
           },
           {
             "result": {
-              "duration": 12000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 48,
@@ -386,7 +386,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:07.440Z",
+        "start_timestamp": "2020-11-06T03:16:46.033Z",
         "line": 54,
         "name": "Verify invalid response when provided invalid date",
         "description": "",
@@ -396,7 +396,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 45,
@@ -422,7 +422,7 @@
           },
           {
             "result": {
-              "duration": 376000000,
+              "duration": 368000000,
               "status": "passed"
             },
             "line": 46,
@@ -451,7 +451,7 @@
           },
           {
             "result": {
-              "duration": 18000000,
+              "duration": 13000000,
               "status": "passed"
             },
             "line": 48,
@@ -474,17 +474,17 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:07.843Z",
+        "start_timestamp": "2020-11-06T03:16:46.422Z",
         "line": 68,
-        "name": "Verify valid response when provided valid date",
+        "name": "Verify sunrise and sunset of specified date",
         "description": "",
-        "id": "validating-sunset-and-sunrise-times-api;verify-valid-response-when-provided-valid-date;;2",
+        "id": "validating-sunset-and-sunrise-times-api;verify-sunrise-and-sunset-of-specified-date;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 59,
@@ -514,7 +514,7 @@
           },
           {
             "result": {
-              "duration": 363000000,
+              "duration": 381000000,
               "status": "passed"
             },
             "line": 60,
@@ -543,7 +543,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 20000000,
               "status": "passed"
             },
             "line": 62,
@@ -565,25 +565,26 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 63,
-            "name": "verify sunrise and sunset of given \"2020-11-05\"",
+            "name": "check sunrise and sunset of \"2020-11-05\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"2020-11-05\"",
-                  "offset": 35
+                  "offset": 28
                 }
               ],
-              "location": "stepDefinations.StepDefination1.verify_sunrise_and_sunset_of_given(java.lang.String)"
+              "location": "stepDefinations.StepDefination1.check_sunrise_and_sunset_of(java.lang.String)"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-06T01:38:08.226Z",
+        "start_timestamp": "2020-11-06T03:16:46.833Z",
         "line": 81,
         "name": "Verify time between sunrise and sunset is same as day length",
         "description": "",
@@ -593,7 +594,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 72,
@@ -623,7 +624,7 @@
           },
           {
             "result": {
-              "duration": 379000000,
+              "duration": 377000000,
               "status": "passed"
             },
             "line": 73,
@@ -652,7 +653,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 29000000,
               "status": "passed"
             },
             "line": 75,

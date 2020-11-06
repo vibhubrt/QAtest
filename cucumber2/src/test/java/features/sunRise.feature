@@ -60,7 +60,7 @@ Scenario Outline: Verify sunrise and sunset of specified date
         When user calls API with get Http request 
         Then API call code is "200"
         And "status" in response body is "OK"
-        And check sunrise and sunset of  "<date>"
+        And check sunrise and sunset of "<date>"
         
         
 Examples: 

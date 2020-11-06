@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="cucumber.Options.TestRunner" time="7.738" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="cucumber.Options.TestRunner" time="7.078" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
     <property name="java.vm.version" value="25.152-b16"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\vibhu\workspace\cucumber"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\vibhu\git\QAtest\cucumber2"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\vibhu\workspace\cucumber"/>
+    <property name="user.dir" value="C:\Users\vibhu\git\QAtest\cucumber2"/>
     <property name="java.runtime.version" value="1.8.0_152-b16"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_152\jre\lib\endorsed"/>
@@ -65,11 +65,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify successful response from API" time="5.389"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify default date in response is today" time="0.349"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify unformatted response when requested" time="0.4"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify invalid response when provided invalid date #1" time="0.418"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify invalid response when provided invalid date #2" time="0.376"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify valid response when provided valid date" time="0.407"/>
-  <testcase classname="Validating Sunset and sunrise times API" name="Verify time between sunrise and sunset is same as day length" time="0.399"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify successful response from API including sunrise and sunset times" time="4.714"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify default date in response is today" time="0.354"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify unformatted response when requested" time="0.422"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify invalid response when provided invalid date #1" time="0.374"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify invalid response when provided invalid date #2" time="0.388"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify sunrise and sunset of specified date" time="0.412"/>
+  <testcase classname="Validating Sunset and sunrise times API" name="Verify time between sunrise and sunset is same as day length" time="0.414"/>
 </testsuite>
